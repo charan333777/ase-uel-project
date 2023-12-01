@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-image: url("C:/Users/Kishan/OneDrive/Desktop/Traveling Web/Images/pexels-harrison-macourt-6708045.jpg");
+    background-size: cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: black;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #555;
+}

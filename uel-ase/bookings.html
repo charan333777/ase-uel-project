@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="header.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <script src="script.js" defer> </script>
+   <style>
+        section {
+            
+            padding: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            min-height: 100vh;
+            /* background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover; */
+        }
+
+        .booking-form {
+            display: none;
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            background-color: white;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .booking-form img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .booking-form form {
+            padding: 20px;
+        }
+
+        .booking-form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .booking-form input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        .booking-form button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .booking-form button:hover {
+            background-color: #555;
+        }
+
+        /* aside button:nth-child(1){
+
+
+        }
+
+        aside button:nth-child(2){
+
+            
+        } */
+        button.flightBtn{
+
+        
+        }
+        button.hotelBtn{
+            
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Travelicious</h1>
+        <p>Travel. Your money will return, your time won't.</p>
+    </header>
+
+    <nav>
+        <a href="index.html"><i class="fa-solid fa-house"></i></a>
+        <a href="bookings.html">Bookings</a>
+        <!-- <a href="#">Hotel Booking</a> -->
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section>
+        <aside>
+            <button class="flightBtn"> Flight Booking</button>
+            <button class="hotelBtn"> Hotel Booking</button>
+        </aside>
+        <div class="booking-form flightForm">
+            <img src="C:\Users\Kishan\Downloads\pexels-andrea-piacquadio-3769118.jpg" alt="Flight Booking">
+            <form action="process-flight-booking.php" method="post">
+                <label for="departure">Departure City:</label>
+                <input type="text" id="departure" name="departure" required>
+
+                <label for="destination">Destination City:</label>
+                <input type="text" id="destination" name="destination" required>
+
+                <label for="departure-date">Departure Date:</label>
+                <input type="date" id="departure-date" name="departure-date" required>
+
+                <button type="submit">Book Flight</button>
+            </form>
+
+            
+        </div>
+
+        <div class="booking-form hotelform">
+            <img src="C:\Users\Kishan\Downloads\sasha-kaunas-xEaAoizNFV8-unsplash.jpg" alt="Hotel Booking">
+            <form action="process-hotel-booking.php" method="post">
+                <label for="check-in">Check-In Date:</label>
+                <input type="date" id="check-in" name="check-in" required>
+
+                <label for="check-out">Check-Out Date:</label>
+                <input type="date" id="check-out" name="check-out" required>
+
+                <label for="num-adults">Number of Adults:</label>
+                <input type="number" id="num-adults" name="num-adults" min="1" required>
+
+                <label for="num-children">Number of Children:</label>
+                <input type="number" id="num-children" name="num-children" min="0" required>
+
+                <button type="submit">Book Hotel</button>
+            </form>
+        </div>
+    </section>
+</section>
+<section id="about">
+    <h2>About Us</h2>
+    <p>Welcome to Travelicious, your go-to destination for seamless travel experiences. Our mission is to make travel simple, enjoyable, and accessible to everyone. With a wide range of flight and hotel options, we cater to your travel needs with convenience and affordability in mind. Explore the world with Travelicious, where your journey begins!</p>
+</section>
+<p>Follow us on social media:</p>
+    <ul>
+        <li><a href="https://www.instagram.com/Kishan_026_" target="Kishan_026_"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+        <li><a href="https://twitter.com/kishan_7874" target="SandpaKishan"><i class="fa-brands fa-twitter"></i>twitter</a></li>
+        <li><a href ="https://gmail.com/kishansandpa" target="kishansandpa@gmail.com"><i class="fa-solid fa-envelope"></i>gmail</a></li>
+    </ul>
+</body>
+</html>

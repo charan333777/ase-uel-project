@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelicious - Book Your Trip</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="header.css"/>
+   
+   <style>
+        html, body{
+            scroll-behavior: smooth;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+         
+       
+
+         ul.gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+
+        ul.gallery{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+
+      
+
+        .gallery img {
+            cursor: pointer;
+            width: 50%;
+            max-height: 500px;
+            aspect-ratio: 2/3;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        }
+
+        ul{
+            list-style: none;
+            display: inline-flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        ul li a i{
+
+            font-size: clamp(0.2rem, 10vw, 4rem);
+             color: red;
+             transition: all 2s ease-in-out;
+        }
+        ul li a{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Travelicious</h1>
+        <p>Travel. Your money will return, your time won't.</p>
+    </header>
+
+    <nav>
+        <a href="index.html"><i class="fa-solid fa-house"></i></a>
+        <a href="bookings.html">Bookings</a>
+        <!-- <a href="#">Hotel Booking</a> -->
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+ 
+
+    <section>
+        <h2>Gallery</h2>
+
+        <ul class="gallery">
+            <li>   <div class="gallery-item">
+                <img src="C:/Users/Kishan/OneDrive/Desktop/Traveling Web/Images/pexels-dominika-roseclay-1252500.jpg" alt="Place 1">
+                <div class="place-info">
+                    <h3>Beautiful Place 1</h3>
+                    <p>Discover the charm of Place 1 with stunning views and rich culture. Perfect for nature lovers and adventure seekers.</p>
+                </div>
+            </div></li>
+            <li>
+                <div class="gallery-item">
+                    <img src="C:\Users\Kishan\OneDrive\Desktop\Traveling Web\Images\pexels-element-digital-1051073.jpg" alt="Place 2">
+                    <div class="place-info">
+                        <h3>Exotic Place 2</h3>
+                        <p>Immerse yourself in the beauty of Place 2, known for its unique landscapes and vibrant local markets.</p>
+                    </div>
+                </div></li>
+            <li>    <div class="gallery-item">
+                <img src="C:\Users\Kishan\OneDrive\Desktop\Traveling Web\Images\pexels-element-digital-1051075.jpg" alt="Place 3">
+                <div class="place-info">
+                    <h3>Scenic Place 3</h3>
+                    <p>Explore the scenic wonders of Place 3, a perfect destination for nature lovers and relaxation.</p>
+                </div>
+            </div></li>
+        </ul>
+
+<table>
+
+
+</table>
+
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to Travelicious, your go-to destination for seamless travel experiences. Our mission is to make travel simple, enjoyable, and accessible to everyone. With a wide range of flight and hotel options, we cater to your travel needs with convenience and affordability in mind. Explore the world with Travelicious, where your journey begins!</p>
+    </section>
+    <p>Follow us on social media:</p>
+    
+    <ul>
+        <li><a href="https://www.instagram.com/Kishan_026_" target="Kishan_026_"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+        <li><a href="https://twitter.com/kishan_7874" target="SandpaKishan"><i class="fa-brands fa-twitter"></i>twitter</a></li>
+        <li><a href ="https://gmail.com/kishansandpa" target="kishansandpa@gmail.com"><i class="fa-solid fa-envelope"></i>gmail</a></li>
+    </ul>
+
+    <footer>
+        &copy; 2023 Travelicious. All rights reserved.
+    </footer>
+
+
+
+</body>
+</html>
